@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TroikaRegular';
+    src: url('troika.eot');
+    src: url('troika.eot') format('embedded-opentype'),
+         url('troika.woff2') format('woff2'),
+         url('troika.woff') format('woff'),
+         url('troika.ttf') format('truetype'),
+         url('troika.svg#TroikaRegular') format('svg');
+}

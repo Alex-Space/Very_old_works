@@ -1,0 +1,60 @@
+#cab .rem {
+	margin-top: 30px!important;
+}
+.header_menu a {
+	margin-right: 18px!important;
+	margin-left: 2px!important;
+}
+#miss a {
+	margin-left: 15px!important;
+}
+.at {
+	position: relative;
+	top:3px;
+}
+#vrt input {
+	height: 24px!important;
+}
+@media screen and (max-width: 1200px) {
+	#cab .rem {
+		margin-top: 92px!important;
+	}
+	.at {
+		margin-top: 90px!important;
+	}
+	.c5 a {
+		margin-left: 15px!important;
+	}
+	#vrt input {
+		height: 22px!important;
+	}
+	#vrt input[type=submit] {
+		margin-top: -2px;
+		height: 28px!important;
+	}
+
+
+
+}
+@media screen and (max-width: 979px) {
+	.head_form {
+		top:24px!important;
+	}
+	#vrt input {
+		height: 22px!important;
+	}
+	#vrt input[type=submit] {
+		margin-top: -2px;
+		height: 28px!important;
+	}
+	.ml105 {
+		margin-left: -80px!important;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	.head_form {
+		top:20px!important;
+	}
+
+} 

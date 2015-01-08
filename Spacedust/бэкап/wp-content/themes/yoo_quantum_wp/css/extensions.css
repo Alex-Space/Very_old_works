@@ -1,0 +1,80 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* WidgetKit
+----------------------------------------------------------------------------------------------------*/
+
+/* Slideshow */
+.wk-slideshow-default .nav {
+	position: absolute;
+	z-index: 9;
+	bottom: 20px;
+	right: 30px;
+	height: 24px;
+	padding: 4px 8px 0 8px;
+	border: 1px solid rgba(0,0,0,0.25);
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	border-radius: 16px;
+	background: rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 0 0 8px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.5);
+	box-shadow: inset 0 0 8px rgba(0,0,0,0.5);
+}
+
+.wk-slideshow-default .nav span:hover { background-position: 0 -40px; }
+.wk-slideshow-default .nav span:active { background-position: 0 -120px; }
+.wk-slideshow-default .nav .active span { background-position: 0 -80px; }
+
+.wk-slideshow-default > div:hover .next,
+.wk-slideshow-default > div:hover .prev {
+	background-image: url(../images/widgetkit/buttons.png);
+	background-repeat: no-repeat;
+}
+
+.wk-slideshow-default > div:hover .next { background-position: 0 0; }
+.wk-slideshow-default > div:hover .next:hover { background-position: 0 -70px; }
+.wk-slideshow-default > div:hover .next:active { background-position: 0 -140px; }
+
+.wk-slideshow-default > div:hover .prev { background-position: 0 -210px; }
+.wk-slideshow-default > div:hover .prev:hover { background-position: 0 -280px; }
+.wk-slideshow-default > div:hover .prev:active { background-position: 0 -350px; }
+
+.wk-slideshow .slides {
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.5);
+	box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* Spotlight */
+.spotlight .overlay-default {
+	background: rgba(0,0,0,0.3) url(../images/widgetkit/magnifier.png) 50% 50% no-repeat;
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.9);
+}
+
+/* Lightbox */
+#lightbox-overlay { background-color: #000!important; }
+#lightbox-content { border-color: #585858; }
+
+#lightbox-outer { box-shadow: 0 0 15px rgba(0,0,0,1.0); }
+
+#lightbox-outer,
+#lightbox-title.lightbox-title-inside { background: #585858; }
+#lightbox-title.lightbox-title-inside { color: #fff; }
+
+/* Twitter */
+
+.wk-twitter .image,
+.wk-twitter-list article { border-color: #333; }
+.wk-twitter-single.image { background: url(../images/widgetkit/bird.png) 0 3px no-repeat; }
+
+.wk-twitter-bubbles .content {
+	border: 1px solid #555;
+	background: #333;
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.5);
+	box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+.wk-twitter-bubbles .content:after { background-image: url(../images/widgetkit/arrow.png); }

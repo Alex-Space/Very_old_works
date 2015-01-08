@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="content-language" content="ru" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/tetis.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" media="all"/>
+
+<script src="js/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="css/carousel-t.css" media="all" />
+
+<title>Тетис</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script>
+		
+// Корректировка стилей под разные браузеры
+var css=document.styleSheets[0];
+try {
+    // Попробуем добавить стиль для IE
+    css.addRule('.boxCheckbox',
+          'filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);');
+}
+catch(e) {
+    // Добавить стиль для движков Gecko и WebKit
+    css.insertRule('.boxCheckbox { -moz-opacity: 0; -khtml-opacity: 0; }',
+          css.cssRules.length);
+}
+
+
+	</script>
+</head>
+<body>
+     <div class="container container-fluid">
+          <div id="header">
+            <div class="row">
+              <div class="h1 span7">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="" /></a>
+                </div>
+                <div class="text1">
+                       <p>Все о дайвинге, подводной охоте и фридайвинге</p>               
+                </div> 
+                <div class="text2">
+                    <p>Подводный портал Тетис</p>
+                </div>
+              </div>
+              <div class="h2 span5">
+                <div class="sec">
+                  <div id="cab">
+                    <form class="changer" action="#" method="post" name="cab">
+                    <input class="log" type="text" name="login" value="Логин" onBlur="if(this.value=='') this.value='Логин'" onFocus="if(this.value =='Логин')this.value=''" />
+                    <input class="pas" type="password" name="pass" value="Пароль" onBlur="if(this.value=='') this.value='Пароль'" onFocus="if(this.value =='Пароль')this.value=''" />
+                    <input class="inner" type="submit" name="voyti" value="Войти" />
+                    <input class="at" type="checkbox" name="save" value="" ><span class="rem">Запоминть меня</span></input>
+                    </form>
+                    <div class="regpan">
+                    <a href="#" class="reg">Зарегистрироваться</a>
+                    <a href="#" class="zpass">Забыли пароль</a>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+
+            <div class="just_menu rel">
+                <ul class="navigation">
+                  <li class="li1"><a class="n1" href="#">Дайвинг</a></li>
+                  <li class="li2"><a class="n2" href="#">Технодайвинг</a></li>
+                  <li class="li3"><a class="n3" href="#">Подводная охота</a></li>
+                  <li class="li4"><a class="n4" href="#">Фридайвинг</a></li>
+                  <li class="li5"><a class="n5" href="#">Плавание</a></li>
+                  <li class="li6"><a class="n6" href="#">Фото</a></li>
+                  <li class="li7 last-menu-el"><a class="n7" href="#">Форум</a></li>
+                </ul>
+                <div class="head_form">
+                    <form class="" action="#" method="post" name="search-form">
+                      <div id="vrt">
+                        <input id="serch-form" name="search" type="text" value="Поиск" onBlur="if(this.value=='') this.value='Поиск'" onFocus="if(this.value =='Поиск')this.value=''" />
+                        <input type="submit" class="serach-b" name="rezultat" value="">
+                      </div>
+                    </form>
+                </div>
+         
+            </div>
+   
+      </div>
+          <div id="tab1" >
+      <div class="tab-b">
+       <div class="tab-c">
+          <img src="img/knop1.png" alt="" />
+          <a class="red" href="#">Магазины</a>
+       </div>
+       <div class="tab-c">
+           <img src="img/green_knop.png" alt="" />
+       <a class="green" href="#">Каталог снаряжения</a>
+       </div>
+      </div>
+
+
+        <div class="tab-c ka-pro">
+             <img src="img/knop3.png" alt="" /><a href="#">Каталоги производителей</a>
+        </div>
+        <div class="tab-c i-spra">
+             <img src="img/knop3.png" alt="" /><a href="#">Инструкции и справочники</a>
+        </div>
+
+
+        <div class="tab-c ob-vi">
+             <img src="img/knop3.png" alt="" /><a href="#">Обучающее видео</a>
+        </div>
+        <div class="tab-c ko-spe">
+             <img src="img/knop3.png" alt="" /><a href="#">Консультация специалиста</a>
+        </div>
+         <div class="tab-c st-snar">
+             <img src="img/knop3.png" alt="" /><a href="#">Статьи о снаряжении</a>
+        </div>
+</div>
+       <div class="menu_tab2 pat280-2">
+             <ul>
+               <li><a href="/">Главная</a></li>
+			   <li>/</li>
+               <li><a href="#">Раздел</a></li>
+			   <li>/</li>
+               <li><a class="active" href="#">Название страницы</a></li>
+            </ul>
+       </div>   
+     </div>
+     <div class="container container-fluid">
+      <div id="content">
+	 <h2 class="product-title">Боты и носки</h2>
+		<div class="proizvod">
+			Производители: <br />
+			<a href="#" class="active">Все</a>
+			<a href="#">TUSA</a>
+			<a href="#">Aqua Lung</a>
+			<a href="#">Aqua Lung Se aQuest</a>
+			<a href="#">Apeks</a>
+		</div>
+		<div id="cat-tov">
+		 <div class="sort">
+		    Сортировка: <span><a href="#">Цена <img src="img/sort-cat.png"></a></span>
+		   </div>
+		   <div class="s-tovar">
+		    <img src="img/cat-01.png" alt="" />
+			 <div class="op">
+			  <div style="margin-bottom: 6px;">
+			 <a href="#" class="a">Aqua Lung (бренд)</a> <a href="#" class="b">Компенсатор плавучести крыло Selene Wing (BCJ-6910)</a>
+			  </div>
+				<div class="a"><span>Таблица параметров (название параметра)</span> <b>значение параметра</b></div>
+				<div class="b"></div>
+				<div class="a"></div>
+				<div class="b"></div>
+							   <div class="icons">
+			    <a href="#"><img src="img/korz.png" alt="" /></a>
+			    <a href="#"><img src="img/proc.png" alt="" /></a>
+			    <a href="#"><img src="img/star.png" alt="" /></a>
+			    <a href="#"><img src="img/new.png" alt="" /></a>
+			    <a href="#"><img src="img/kamera.png" alt="" /></a>
+			  </div>
+			 </div>
+		     <div class="cat-pr">
+			  <div class="price">
+				Цена: <span>32 100</span> р.
+				</div>
+				<div class="sr">
+				  <input type="checkbox" value="" /> 
+				   <input type="checkbox" id="chk1" onclick="doCheckbox(this);"><label for="chk1">В сравнение</label>
+				</div>
+			 </div>
+		   </div>
+		    		   <div class="s-tovar">
+		    <img src="img/cat-02.png" alt="" />
+			 <div class="op">
+			  <div style="margin-bottom: 6px;">
+			 <a href="#" class="a">Aqua Lung (бренд)</a> <a href="#" class="b">Компенсатор плавучести крыло Selene Wing (BCJ-6910)</a>
+			  </div>
+				<div class="a"><span>Таблица параметров (название параметра)</span> <b>значение параметра</b></div>
+				<div class="b"></div>
+				<div class="a"></div>
+				<div class="b"></div>
+							   <div class="icons">
+			    <a href="#"><img src="img/korz.png" alt="" /></a>
+			    <a href="#"><img src="img/proc.png" alt="" /></a>
+			    <a href="#"><img src="img/star.png" alt="" /></a>
+			    <a href="#"><img src="img/new.png" alt="" /></a>
+			    <a href="#"><img src="img/kamera.png" alt="" /></a>
+			  </div>
+			 </div>
+		     <div class="cat-pr">
+			  <div class="price">
+				Цена: <span>32 100</span> р.
+				</div>
+				<div class="sr">
+				  <input type="checkbox" value="" /> 
+				   <input type="checkbox" id="chk2" onclick="doCheckbox(this);"><label for="chk2">В сравнение</label>
+				</div>
+			 </div>
+		   </div>
+		    		   <div class="s-tovar">
+		    <img src="img/cat-03.png" alt="" />
+			 <div class="op">
+			  <div style="margin-bottom: 6px;">
+			 <a href="#" class="a">Aqua Lung (бренд)</a> <a href="#" class="b">Компенсатор плавучести крыло Selene Wing (BCJ-6910)</a>
+			  </div>
+				<div class="a"><span>Таблица параметров (название параметра)</span> <b>значение параметра</b></div>
+				<div class="b"></div>
+				<div class="a"></div>
+				<div class="b"></div>
+							   <div class="icons">
+			    <a href="#"><img src="img/korz.png" alt="" /></a>
+			    <a href="#"><img src="img/proc.png" alt="" /></a>
+			    <a href="#"><img src="img/star.png" alt="" /></a>
+			    <a href="#"><img src="img/new.png" alt="" /></a>
+			    <a href="#"><img src="img/kamera.png" alt="" /></a>
+			  </div>
+			 </div>
+		     <div class="cat-pr">
+			  <div class="price">
+				Цена: <span>32 100</span> р.
+				</div>
+				<div class="sr">
+				  <input type="checkbox" value="" /> 
+				   <input type="checkbox" id="chk3" onclick="doCheckbox(this);"><label for="chk3">В сравнение</label>
+				</div>
+			 </div>
+		   </div>
+		   </div>
+		    
+   <div class="right-block rb-in12">
+   <h3>Статьи </h3>
+   <a href="#">Один из старейших дайверов повесил ласты на гвоздь</a>
+   <a href="#">Ирландия - красочный подводный мир изумрудного острова</a>
+   <a href="#">Подводный поиск - что и как</a>
+   </div>
+           <div id="int_predloj">
+                <p class="z">Интересные предложения</p>                            
+                     
+       <div class="iepe" border="0">
+                    
+                        <div class="iepe-b">
+                           <img src="img/garpun.png" alt="" />
+                           <a href="#">Размер имеет значение</a>
+                           <p>Скидки на модель Tempest</p>
+                        </div>
+                        <div class="iepe-b">
+                            <img src="img/masks.png" alt="" />
+                            <a href="#">Комплектом дешевле</a>
+                            <p>Специальные цены на комплекты регулятор + октопус</p>
+                           
+                        </div>
+                        <div class="iepe-b">
+                           <img src="img/masks2.png" alt="" />
+                           <a href="#">Консоль бесплатно</a>
+                           <p>Дарим двухприборную консоль к комплекту Legend Glacia</p>
+                        </div>
+                        <div class="iepe-b ml105">
+                            <img src="img/lada.png" alt="" />
+                            <a href="#">Девятка за девятку</a>
+                            <p>Master Team 9mm всего за 9000 р.</p>
+                        </div>
+                        <div class="iepe-b">
+                            <img src="img/masks2.png" alt="" />
+                            <a href="#">Консоль бесплатно</a>
+                           <p>Дарим двухприборную консоль к комплекту Legend Glacia</p>
+                        </div>    
+             </div>  
+        </div>
+   </div>
+   </div>
+     <div id="footer" class="f-glide hei-full">
+          <div class="container container-fluid">
+          <div class="fon_footer">
+               <div class="dann"><p>© 1998-2013 Подводный портал «Тетис» </p></div>
+          </div>
+          <div class="menu_footer">
+               <ul>
+                  <li><a href="/">Главная </a></li>
+                  <li><a href="#"> Обратная связь</a></li>
+                  <li><a href="#">Карта сайта</a></li>
+               </ul>
+          </div>
+          </div>
+     </div>
+</body>
+</html>

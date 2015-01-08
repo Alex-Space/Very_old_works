@@ -1,0 +1,36 @@
+.nav-wrap { height: 70px; 
+
+}
+
+/* Clearfix */
+.group:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+/* Example Two */
+#example-two {     
+}
+#example-two li { 
+	display: inline-block; 
+}
+#example-two li a {  
+	z-index: 200;      
+}
+#example-two #magic-line-two { 
+	position: absolute; 
+	top: 28px;
+	left:100px;
+	margin-left: 46px; 
+	width: 57px!important;
+	background-image: url(../images/elips.png);
+	opacity: 0.7;
+	background-repeat: no-repeat;
+	z-index: 100; 
+	background-color: transparent!important;
+	height: 57px!important;
+}
+.ie6 #example-two li, .ie7 #example-two li {
+	display: inline;
+}
+.group {
+	height: 70px;
+}

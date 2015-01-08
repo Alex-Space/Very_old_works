@@ -1,0 +1,39 @@
+/* DEMO#1 */
+
+#myExample {
+	margin: 30px auto;
+	width: 640px;
+	height: 240px;
+	overflow: hidden;
+}
+
+#myExample img {
+	border: 4px solid #D6746A;
+}
+
+.controls {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: blue;
+}
+
+.controls span {
+	cursor: pointer;
+	padding: 0px 10px;
+}
+
+.news li {
+	background-color: white;
+	border: 3px solid silver;
+	padding: 10px;
+	width: 250px;
+	height: 200px;
+	font-size: 0.8em;
+}
+
+.news #myExample img {
+	margin: 10px;
+	border: 2px solid silver;
+}
+

@@ -1,0 +1,54 @@
+*** thememagic Changelog ***
+
+19-08-2013 - version 1.4.17
+* css changes added in style.css for pre, post, sticky and wp-caption
+* style added for featured image and loop.php and template-blog.php updated with additional div.
+
+2-07-2013 - version 1.4.16
+Text made Translatable below:
+* template-blog.php: line 63
+* loop.php: line 24, line 33, line 42
+
+14-4-2013 - version 1.4.15
+* Menu delay bug fixed. File changed js/jquery.custom.js file. Autoarrows made to true.
+
+28-3-2013 - version 1.4.14
+* Sidebar css added in style.css for word-wrap and image width.
+#sidebar { word-wrap: break-word;}
+#sidebar img { width: 100%;}
+
+08-3-2013 - version 1.4.13
+* Added support for custom backgrounds.
+
+3-3-2013 - version 1.4.12
+* Menu bug fixed. Menu going behind slider caption fixed in superfish.css file.
+
+20-02-2013- version 1.4.11
+* Option added to on/off comments on page in theme options - other settings.
+
+09-02-2013- version 1.4.10
+function_exists() checks for has_post_thumbnail removed from loop.php
+
+12-12-2012- version 1.4.9
+*Styling of form buttons when used in post content changed.
+Link in footer corrected from WordPress.com to WordPress.org
+
+28-11-2012 - version 1.4.8
+* No Post title test problem corrected in loop.php file.
+
+31-10-2012 - version 1.4.7
+* Style Settings added in theme options panel to add custom css to the theme. 
+
+23-10-2012 - version 1.4.6
+* Blog Settings added in theme options panel to exclude categories from displaying on the "Blog" page template. 
+
+10-15-2012 - version 1.4.5
+ * New option added to add Fav Icon.
+
+10-7-2012 - version 1.4.1
+ * Options panel updated.
+ * template-blog.php file added.
+ * front-page.php file added.
+ * Other small style css bug changes.
+ * read-me file adeded.
+ * languages folder added.

@@ -1,0 +1,267 @@
+body{
+	margin:0;
+	background-image:url(img/mossie1.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position: 0px 0px;
+	-moz-background-size:cover; /* Gecko 1.9.2 (Firefox 3.6) */
+-o-background-size:102% auto; /* Opera 9.5 */
+-webkit-background-size:102% auto; /* Safari 3.0 */
+-khtml-background-size:cover; /* Konqueror 3.5.4 */
+background-size:cover; /* CSS3 */
+}
+p, h1, h2,  h3, h4, h5, h6{
+	color:white;
+	text-shadow:1px 0 0 rgba(0,0,0,.5);
+	padding: 0 20px;
+
+}
+.gen-mar{
+	margin-top: 70px;
+}
+.transl{
+	padding: 0px;
+}
+.right{
+	float: right;
+}
+.logo{
+	position: relative;
+	left: 25px;
+	bottom: 0;
+	margin: 0 0 0 -70px;
+	z-index: 1;
+
+
+}
+.scroll{
+	padding: 15px 0;
+	border-radius: 20px;
+	background: url(img/bg-scroll.png);
+	position: relative;
+	margin-top: 10px;
+}
+.scroll h1, .dima{
+	border-bottom: 1px solid #cf4444;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.bolt-left{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bolt-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.bolt-left-bot{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.bolt-right-bot{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.social{
+	display: block;
+	float: left;
+	margin: 0px 0 0 0px!important;
+	
+}
+.transl{
+	border-bottom: 1px solid #cf4444;
+	text-align: left;
+	padding-bottom: 10px;
+}
+.social li{
+	display: inline;
+	list-style: none;
+	float: right;
+	position: relative;
+	z-index: 100;
+
+	margin:0px 10px 10px 0;
+	opacity: 0.5;
+	transition:opacity 0.2s ease-out 0s;
+	-webkit-transition: opacity 0.2s ease-out 0s;
+	-moz-transition: opacity 0.2s ease-out 0s;
+    -o-transition: opacity 0.2s ease-out 0s;
+}
+.social li:hover{
+	opacity: 1;
+}
+.soc-rel{
+	position: relative;
+}
+.myvideo {
+position:relative;
+padding-bottom:35.25%;
+padding-top:30px;
+height:0;
+overflow:hidden;
+
+}
+
+.myvideo iframe,.myvideo object,.myvideo embed {
+position:absolute;
+top:0;
+left:0;
+width:150%;
+height:150%;
+border: none;
+}
+.mosq{
+	text-align: center;
+}
+.mosq h2,.mosq h2,.mosq h5{
+	float: left;
+	overflow: hidden;
+}
+.clear{
+	clear: both;
+}
+.red-mos{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.scroll li{
+	list-style:none;
+	float: left;
+	clear: both;
+	overflow: hidden;
+}
+.scroll li a{
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 35px;
+	margin: 0;
+	 -webkit-transition: margin 0.4s ease-out 0s;
+     -moz-transition: margin 0.4s ease-out 0s;
+     -o-transition: margin 0.4s ease-out 0s;
+     transition: margin 0.4s ease-out 0s;
+}
+.scroll li a:hover{
+	
+	color:#cf4444;
+	text-decoration: none;
+	text-shadow:1px 0 0 rgba(255,);
+	margin-left: 10px;	
+}
+.dash{
+	border-bottom: 1px solid #cf4444;
+	padding-bottom: 20px;
+}
+.border-none{
+	margin-left: 40px;
+	float: left;
+}
+.center{
+	text-align: center;
+	line-height: 32px;
+	font-size: 17px;
+}
+.btn{
+	margin-top: 10px;
+	
+}
+footer{
+	background: url(img/bg-footer.png);
+	min-height: 100px;
+	position: relative;
+	bottom: 0;
+	position: relative;
+	margin-top: 30px;
+}
+.logo-mini{
+	float: left;
+}
+.liquis{
+	float: right;
+}
+.relat{
+	position: relative;
+}
+.rights{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 17px;
+}
+.rights a{
+	color: #cf4444;
+	text-decoration: none;
+}
+.rights a:hover{
+	text-decoration: none;
+	color: black;
+	text-shadow:1px 0 0 rgba(255,255,255,.2);
+}
+.border-none h3{
+	font-size: 23px;
+}
+.red{
+	text-align: center;
+	margin-bottom: 20px;
+}
+iframe{
+	margin: 0 auto;
+	display: block;
+}
+/*Плеер*/
+	.mus{
+		height: 74px;
+		margin-left: -30px;
+	}
+	.navbar-inner{
+		max-height: 41px;
+	}
+	.player{
+	overflow: hidden;
+	display: inline-block;
+	height: 37px;
+	width: 32%;
+	padding-top: 3px;
+	background: black;
+	}
+
+
+/*Галерея*/
+
+@media screen and (max-width: 996px) {
+	.gen-mar{
+		margin: 0 auto;
+	}
+	.mus{
+		display: none;
+	}
+	.border-none h3 {
+	font-size: 17px;
+	}
+	.scroll li a {
+		color: white;
+		transition:none;
+		font-size: 15px;
+	}
+	.scroll li a:hover{
+		margin: 0;
+	}
+	.border-none {
+	margin-left: 3%;
+	}
+	.dash {
+	text-align: center;
+	}
+	.clear-left{
+	clear: left;
+	width: 100%;
+	}
+	.soc-rel{
+		width: 100%;
+	}
+}

@@ -1,0 +1,254 @@
+<?php
+
+/**
+ * @file
+ * Простой модуль неиндексируемого поиска для Drupal 7
+ */
+
+/**
+ * Объявляем блок поиска
+ */
+function simplesearch_block_info() 
+{
+  $blocks['simplesearch'] = array(
+    'info' => t('Simple Search'), 	// Имя, которое будет показано в списке блоков.
+    'cache' => DRUPAL_CACHE_PER_ROLE,   // Настройки кэширования блока
+  );
+
+  return $blocks;
+}
+
+/**
+ * Подготовка содержимого для блока.
+ */
+function simplesearch_block_view($delta = '') 
+{
+  $block=array();
+
+  switch($delta){
+    case 'simplesearch':
+      $block['subject'] = t('Search on site');				// Заголовок блока
+      $block['content'] = drupal_get_form('simplesearch_block_form');	// Генерируемая форма блока
+  }
+
+  return $block;
+}
+
+/**
+ * Описание формы блока
+ */
+function simplesearch_block_form($form_id)
+{
+  // Контейнер нужен, чтобы поле ввода и кнопка были в ряд
+  $form['container'] = array(
+    '#prefix' => '<div class="container-inline">',
+    '#suffix' => '</div>',
+  );
+
+ $form['container']['search'] = array(
+  '#type' => 'textfield',
+  '#size' => 25,
+  '#maxlength' => 128,
+  '#required' => true,
+ );
+
+ $form['container']['submit'] = array(
+  '#type' => 'submit',
+  '#value' => t('Search'),
+ );
+
+ return $form;
+}
+
+/**
+ * Обработка отправки формы
+ */
+function simplesearch_block_form_submit($form, &$form_state) 
+{
+ $sResult=array(  //post data
+   'mysearch'=>$form_state['values']['search'],
+ );
+ // Формируем строку запроса и переходим на нее
+ $form_state['redirect'] = 'search/node/' . $sResult['mysearch'] .'/1/1/1';
+}
+
+/**
+ * Создаем меню, которое создает статические страницы
+ */
+function simplesearch_menu() 
+{
+  // Форма поиска
+  $items['search'] = array(
+    'title' => 'Search',
+    'page callback' => 'simplesearch_simple',
+    'access arguments' => array('access search page'),
+    'access callback' => TRUE,
+  );
+
+  // Результаты поиска
+  $items['search/node/%/%/%/%'] = array(
+    'page callback' => 'simplesearch_arguments',
+    'page arguments' => array(2, 3, 4, 5),
+    'access arguments' => array('access search arguments page'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * Описание формы страницы
+ */
+function simplesearch_form($form_id)
+{
+ $form=array();
+
+ $form['search'] = array(
+  '#title' => t('Enter keywords to search'),
+  '#type' => 'textfield',
+  '#size' => 50,
+  '#maxlength' => 128,
+  '#required' => true,
+ );
+
+ $form['search_title'] = array(
+  '#title' => t('Search in node titles'),
+  '#type' => 'checkbox',
+  '#required' => false,
+  '#default_value' => 1, 
+ );
+
+ $form['search_body'] = array(
+  '#title' => t('Search in node body'),
+  '#type' => 'checkbox',
+  '#required' => false,
+  '#default_value' => 1, 
+ );
+
+ $form['search_filenames'] = array(
+  '#title' => t('Search in filenames'),
+  '#type' => 'checkbox',
+  '#required' => false,
+  '#default_value' => 1, 
+ );
+
+ $form['submit'] = array(
+  '#type' => 'submit',
+  '#value' => t('Search'),
+ );
+
+ return $form;
+}
+
+/**
+ * Рендерим форму поиска на странице
+ */
+function simplesearch_simple() 
+{
+  return drupal_get_form('simplesearch_form');
+}
+
+/**
+ * Обработка отправки формы
+ */
+function simplesearch_form_submit($form, &$form_state) 
+{
+ $sResult=array(  //post data
+   'mysearch'=>$form_state['values']['search'],
+   'mysearch_title'=>$form_state['values']['search_title'],
+   'mysearch_body'=>$form_state['values']['search_body'],
+   'mysearch_filenames'=>$form_state['values']['search_filenames']
+ );
+
+ // Если не выбран ни один критерий поиска, выдаем ошибку
+ if (($sResult['mysearch_title'] != 1) && ($sResult['mysearch_body'] != 1) && ($sResult['mysearch_filenames'] != 1))
+ {
+   drupal_set_message(t('You must select at least one search criteria'),'error');
+ }
+ else
+ {
+   // Иначе формируем строку запроса и переходим на нее
+   $form_state['redirect'] = 'search/node/' . $sResult['mysearch'] .'/'. $sResult['mysearch_title'] .'/'. $sResult['mysearch_body'] .'/'. $sResult['mysearch_filenames'];
+ }
+}
+
+/**
+ * Рендерим результаты поиска
+ */
+function simplesearch_arguments($first, $second, $third, $fourth) 
+{
+  // Заголовок страницы
+  $render_array['simplesearch_arguments'] = array(
+      '#markup' => "<H2>".t("Search Results")."</H2>");
+
+  // Если пользователь пытается вручную сформировать строку поиска, то надо проверять
+  // не пустая ли она, иначе ошибка
+  if (empty($first))
+  {
+    drupal_set_message(t('Enter keywords to search'),'error');
+    return $render_array;
+  }
+  
+  // Преобразовываем строку поиска в простой формат (защита от внедрения кода)
+  $first = check_plain($first);
+
+  // Если во всех критериях стоят нули, выдаем ошибку
+  if (($second != 1) && ($third != 1) && ($fourth != 1))
+  {
+    drupal_set_message(t('You must select at least one search criteria'),'error');
+    return $render_array;
+  }
+
+  // если поиск по заголовкам материалов
+  if ($second == 1)
+  {
+    $nodes = db_query("SELECT * FROM {node} WHERE title LIKE :title", array(':title' => '%' . db_like($first) . '%'));
+    $result ="";
+    foreach ($nodes as $node) 
+    {
+      $items[$node->nid] = array("title"=>$node->title, "nid"=>$node->nid, "datetime"=>$node->created);
+      $highlight = str_replace(mb_strtolower($first, 'UTF-8'),"<b>".mb_strtolower($first, 'UTF-8')."</b>",$items[$node->nid]["title"]);
+      $result .= "<a href=/node/".$items[$node->nid]["nid"].">".$highlight."</a><br>".
+		"<span class=\"meta submitted\">".t("Submitted on ").format_date($items[$node->nid]["datetime"], 'custom', 'd.m.Y - H:i')."</span><br><br>";
+    }
+    $render_array['simplesearch_arguments']['#markup'] .= $result;
+  }
+  
+  // Если поиск по содержимому материалов
+  if ($third == 1)
+  {
+    //$nodes = db_query("SELECT * FROM {field_data_body} WHERE body_value LIKE :body_value", array(':body_value' => '%' . db_like($first) . '%'));
+    $nodes = db_query("SELECT * FROM {field_data_body} f INNER JOIN {node} n ON f.entity_id = n.nid WHERE body_value LIKE :body_value", array(':body_value' => '%' . db_like($first) . '%'));
+    $result ="";
+    foreach ($nodes as $node) 
+    {
+      $items[$node->entity_id ] = array("body_value"=>$node->body_value, "entity_id"=>$node->entity_id, "title"=>$node->title,  "datetime"=>$node->created);
+
+      $text = strip_tags($items[$node->entity_id ]["body_value"]);
+      $position = mb_strripos($text, mb_strtolower($first, 'UTF-8'));
+      $highlight = mb_eregi_replace(mb_strtolower($first, 'UTF-8'),"<b>".mb_strtolower($first, 'UTF-8')."</b>",mb_strtolower($text, 'UTF-8'));
+      $result .= "<a href=/node/".$items[$node->entity_id]["entity_id"].">".$items[$node->nid]["title"]."</a><br>".
+                "...".mb_substr($highlight, ($position-40), 100, 'utf-8')."...<br>".
+      		"<span class=\"meta submitted\">".t("Submitted on ").format_date($items[$node->nid]["datetime"], 'custom', 'd.m.Y - H:i')."</span><br><br>";
+    }
+    $render_array['simplesearch_arguments']['#markup'] .= $result;    
+  }
+  
+  // Если поиск по именам файлов
+  if ($fourth == 1)
+  {
+    $nodes = db_query("SELECT * FROM {file_managed} WHERE filename LIKE :filename", array(':filename' => '%' . db_like($first) . '%'));
+    $result ="";
+    foreach ($nodes as $node) 
+    {
+      $items[$node->fid] = array("filename"=>$node->filename, "filepath"=>"files/".$node->filename, "datetime"=>$node->timestamp);
+      $highlight = str_replace(mb_strtolower($first, 'UTF-8'),"<b>".mb_strtolower($first, 'UTF-8')."</b>",$items[$node->fid]["filename"]);
+      $result .= "<a href=\"/" . $items[$node->fid]["filepath"] . "\">".$highlight."</a><br>".
+		"<span class=\"meta submitted\">".t("File uploaded on ").format_date($items[$node->fid]["datetime"], 'custom', 'd.m.Y - H:i')."</span><br><br>";
+    }
+    $render_array['simplesearch_arguments']['#markup'] .= $result;
+  }
+
+  return $render_array;
+}

@@ -1,0 +1,33 @@
+Косой: [i]italics[/i]
+
+Подчеркнутый: [u]underline[/u]
+
+Ссылка: [url]http://wordpress.org/[/url] [url=http://wordpress.org/]WordPress[/url]
+
+Изображение: [img]http://s.wordpress.org/style/images/codeispoetry.png[/img] [img=Code is Poetry]http://s.wordpress.org/style/images/codeispoetry.png[/img]
+
+Цитата: [quote]Lorem ipsum dolor sit amet, consectetuer adipiscing elit,[/quote]
+
+Цвет: [color="red"]named red[/color] [color="ff0000"]hex red[/color] [color=#ff0000]hex red again[/color]
+
+Зачеркнутый:[s]striked this out[/s]
+
+Центрировать:[center]center me[/center]
+
+Код:[code]function HelloWorld($greet = 'World') { return 'Hello '.$greet } [/code]
+
+Размер шрифта: [size=10]10px font size[/size]
+
+Нумерованный список: [ol][li][/li][/ol]
+
+Не нумерованный список: [ul][li][/li][/ul]
+
+Пункт списка: [li]item[/li]
+
+Именованный спойлер: [spoiler=two plus two]four[/spoiler]
+
+Безымянный спойлер: [spoiler]Boo![/spoiler]
+
+То что видят только зарегистрированные: [user]This is a secret message[/user]
+
+То что видят только гости: [guest]Log in to see secret message...[/guest]
