@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="ключевые слова" />
+	<meta name="description" content="На нашем сайте вы можете..." />
+	<title>My test</title>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<!--[if IE]>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:300" /> 
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400" /> 
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:700" />
+	<![endif]-->
+	<!--[if lte IE 7]>
+	<link rel="stylesheet" href="commons/css/ie7.css" type="text/css">
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+	<![endif]--> 
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+	<link rel="stylesheet" href="commons/css/style.css">
+	<link rel="stylesheet" href="commons/css/theatre.css">
+	<link rel="stylesheet" href="commons/css/demo.css">
+	<link rel="stylesheet" href="commons/css/jquery.formstyler.css">
+	
+	<script type="text/javascript" src="commons/js/jQuery 1.8.3.js"></script>
+	<script type="text/javascript" src="commons/js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="commons/js/myscript.js"></script>
+	<script type="text/javascript" src="commons/js/jquery.theatre.min.js"></script>
+	<script type="text/javascript" src="commons/js/start-gallery.js"></script>
+	<script type="text/javascript" src="commons/js/effect.test.js"></script>
+	<script type="text/javascript" src="commons/js/effect.orbit.js"></script>
+	<script type="text/javascript" src="commons/js/effect.css3.js"></script>
+	<script type="text/javascript" src="commons/js/jquery.liBlockSize.js"></script>
+
+
+	
+	
+
+	
+</head>
+<body>
+	<div class="header"> <!-- header starts -->
+		<div class="container">
+		<div class="half about-text">
+			<h3>Accesso all’area riservata</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis<br> nostrud exercitation... ullamco laboris si ut ...<br>
+				aliquip ex ea commodo consequat.
+			</p>
+		</div>
+		<div class="half rel login-area">
+			<form class="autorization">
+				<label for="email">Email</label><input id="email" name="email" type="text">
+				<label for="password">Password</label><input id="password" name="password" type="password">
+				<a class="forget" href="#">Password dimenticata?</a>
+				<div class="clear"></div>
+				<a href="#" class="reg">ACCEDI<i></i></a>
+			</form>
+			<a class="dropdown" href="#">AREA RISERVATA</a>
+		</div>
+	</div>
+
+	</div> <!-- header ends -->
+	<div class="nav-bar"> <!-- nav starts -->
+		<div class="container">
+			<div class="half">
+				<img class="logo" src="commons/img/logo.png" alt="logo">
+			</div>
+			<div class="half rel">
+				<div class="languages">
+					<a class="italy" href="#"></a>
+					<a class="rus" href="#"></a>
+					<a class="uk" href="#"></a>
+				</div>
+				<ul class="nav">
+					<li class="home"><a href="#">home</a></li>
+					<li><a href="#">chi siamo</a></li>
+					<li id="up-down-par" class="rel drop-parent"><a href="#">serverzi</a>
+						<ul id="up-down" class="drop-child">
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Collaboratory</a></li>
+							<li><a href="#">Arcada</a></li>
+						</ul>
+
+					</li>
+					<li><a href="#">elenco partners</a></li>
+					<li><a href="#">contatti</a></li>
+				</ul>
+			</div>
+		</div>
+	</div> <!-- nav ends -->
+	<div class="gallery"><!-- gallery starts -->
+		<div id="maker" class="container rel index">
+			
+		
+		<div id="myExample" style="width: 632px; margin: auto; visibility: hidden /* trick to hide loading images before Theatre kicks in */;">
+      <a href="1.jpg" target="_blank">
+        <img src="commons/img/1.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="2.jpg" target="_blank">
+        <img src="commons/img/2.jpg" style="height: 236px; width: 320px;"/>
+      </a>
+      <a href="3.jpg" target="_blank">
+        <img src="commons/img/3.jpg" style="height: 240px; width: 330px;"/>
+      </a>
+      <a href="4.jpg" target="_blank">
+        <img src="commons/img/4.jpg" style="height: 240px; width: 330px;"/>
+      </a>
+      <a href="5.jpg" target="_blank">
+        <img src="commons/img/5.jpg" style="height: 240px; width: 330px;"/>
+      </a>
+      <a href="6.jpg" target="_blank">
+        <img src="commons/img/6.jpg" style="height: 240px; width: 330px;"/>
+      </a>
+      <a href="7.jpg" target="_blank">
+        <img src="commons/img/7.jpg" style="height: 240px; width: 330px;"/>
+      </a>
+      <a href="8.jpg" target="_blank">
+        <img src="commons/img/8.jpg" style="height: 240px; width: 330px;"/>
+      </a>
+      <a href="9.jpg" target="_blank">
+        <img src="commons/img/9.jpg" style="height: 240px; width: 330px;"/>
+      </a>
+      <a href="10.jpg" target="_blank">
+        <img src="commons/img/10.jpg" style="height: 240px; width: 330px;"/>
+      </a>
+    </div>
+    <div class="controls">
+	  <span class="prev" onclick="$('#myExample').theatre('prev');"><i></i></span>
+	  <span class="play" onclick="$('#myExample').theatre('play');"><i></i></span>
+	  <span class="stop" onclick="$('#myExample').theatre('stop');"><i></i></span>
+	  <span class="next" onclick="$('#myExample').theatre('next');"><i></i></span>
+	</div>
+	<div class="part-of-features">
+		<div class="tab1">
+			<h3>titolo hotspot</h3>
+		</div>
+		<div class="tab2">
+			<h3>titolo hotspot</h3>
+		</div>
+		<div class="tab3">
+			<h3>titolo hotspot</h3>
+		</div>
+	</div>
+	</div>
+	
+	</div> <!-- gallery ends -->
+	<div class="features"> <!-- features starts -->
+
+		<div class="container hidden boxsize">
+			<div class="post-box rel like">
+				<img src="commons/img/post1.jpg" alt="">
+					<p class="date">19/11/2012</p>
+					<p>
+						Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation...
+						
+
+					</p>
+				<a href="#" class="reg more">APPROFONDISCI<i></i></a>
+			</div>
+			<div class="post-box rel like">
+				<img src="commons/img/post2.jpg" alt="">
+					<p class="date">19/11/2012</p>
+					<p>
+						Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua.
+					</p>
+				<a href="#" class="reg more">APPROFONDISCI<i></i></a>
+			</div>
+			<div class="post-box rel like">
+				<img src="commons/img/post3.jpg" alt="">
+				<p class="date">19/11/2012</p>
+				<p>
+					Lorem ipsum dolor sit amet, consetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation...
+				</p>
+				<a href="#" class="reg more">APPROFONDISCI<i></i></a>
+			</div>
+		</div>
+	</div> <!-- features ends -->
+	<div class="footer"> <!-- footer starts -->
+		<div class="container">
+				<div class="left-foot">
+					<h3>Novità ed Eventi</h3>
+					<ul>
+						<li><a href="#"><i></i>Nome evento</a></li>
+						<li><a href="#"><i></i>Nome dell`evento</a></li>
+						<li><a href="#"><i></i>Nome evento</a></li>
+						<li><a href="#"><i></i>Nome evento</a></li>
+						<li><a href="#"><i></i>Nome evento</a></li>
+					</ul>
+					
+					<a href="#" class="bot-area reg more">ELENCO COMPLETO<i></i></a>
+				</div>
+				<div class="center-foot">
+					<h3>Area Stampa</h3>
+					<p class="pen">Lorem ipsum dolor sit amet, <br/> consetur adipisicing elit, sed do <br/> enismod tempor incididunt ut labore et <br/> dolore magna aliqua. Ut enim ad minim <br/> veniam. quis nostrud exercitation ullamco laboris nisi aliquip ex ea commodo.</p>
+
+					<a href="#" class="bot-area reg more">vai all’area stampa<i></i></a>
+				</div>
+				<div class="right-foot">
+					<h3>Newsletter</h3>
+					<p class="letter">Iscriviti alla nostra newsletter per<br>  essere sempre in contatto con noi</p>
+					<label for="nome">Nome</label>
+					<input id="nome" type="text" name="">
+					<label for="cognome">Cognome</label>
+					<input id="cognome" type="text" name="">
+					<label for="e-mail">Email</label>
+					<input id="e-mail" type="text" name="">
+					<label id="opti" for="autorrizo">
+					<input id="autorrizo" type="checkbox" name=""><span class="chek-span"> Autorizzo il trattamento <br/> dei miei dati
+					</span></label>
+					<a href="#" class="in bot-area reg more">Invia<i></i></a>
+				</div>
+		</div>
+			
+				<div class="bottom_line">
+					<div class="container">
+						<p class="data_adress"><span class="company-name">Arcada Ltd</span> - 4-th Dobryninsky Lane, 8/204 Mosca - Russia, 119049 | TEL. +7 495 783 20 16 | <br/> <a href="#">info@arcadainternational.com</a> | PRIVACY | WEB AGENCY ACTIVE 121 - STRATEGIA WEB</p>
+						<p class="right_img">
+							<img src="commons/img/facebook_logo.png">
+							<img src="commons/img/in_logo.jpg">
+						</p>
+					</div>
+				</div>
+			
+	</div> <!-- footer ends -->
+	
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modus Versus</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="clickCarousel/index.css">
+	<link type="text/css" rel="stylesheet" href="rhinoslide/css/rhinoslider-1.05.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script type="text/javascript"src="js/bootstrap.min.js"></script>
+<!-- Простая карусель -->
+	<script type="text/javascript" src="js/myscript.js"></script>
+	<script type="text/javascript" src="clickCarousel/click-carousel.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#container").clickCarousel({margin: 10});	
+		});
+	</script> 
+<!-- Рино слайдер -->
+	<script type="text/javascript" src="rhinoslide/js/rhinoslider-1.05.min.js"></script>
+	<script type="text/javascript" src="rhinoslide/js/mousewheel.js"></script>
+	<script type="text/javascript" src="rhinoslide/js/easing.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#slider').rhinoslider({
+				effect: 'fade'
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div class="header">
+	<div class="nav">
+		<div class="container container-fluid">
+			<div class="row">
+				<div class="span2 logo"><h1>Space </h1><h3>liquis </h3></div>
+				<div class="span9 offset1">
+					<ul>
+						<li><a href="#">главная</a></li>
+						<li><a href="#">о нас</a></li>
+						<li><a href="#">услуги</a></li>
+						<li class="port-spisok"><a class="main-item" href="#">&nbsp портфолио</a>
+							<div class="big-hide">
+								<ul class="port-hide">
+									<i class="red-arrow"></i>
+									<li><a href="#">&nbsp &nbsp Первая страница</a></li>
+									<li><a href="#">&nbsp &nbsp Вторая страница</a></li>
+									<li><a href="#">&nbsp &nbsp Третья страница</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li><a href="#">блог</a></li>
+						<li><a href="#">особенности</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+<!------------------------ Начало слайдера ------------------------>
+	<div class="slider">
+			
+			<ul id="slider">
+				<li><img src="img/slide1.jpg" alt="" /></li>
+				<li><img src="img/slide2.jpg" alt="" /></li>
+				<li><img src="img/slide3.jpg" alt="" /></li>
+			</ul>
+			
+	</div> <!---- Конец слайдера ---->
+
+	<div> <!---- Начала блока "особенности" ---->
+		<div class="container container-fluid mar-top-40">
+			<div class="row">
+				<div class="span12 light-grey">
+					<div class="span9">
+						<h2>Некоторые из главных услуг</h2>
+						<p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
+					</div>
+					<div class="span2 button-parent">
+						<a class="btn-red" href="#">Подробнее</a>
+					</div>
+				</div>
+			</div>
+			<div class="row features">
+				<div class="span3 img-f1 margin-none">
+					<div class="features-box"><i class="ico-feat1"></i>
+						<h3>SUSPENDISSE</h3>
+						<p> Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. </p>
+						<div class="button-parent absolute">
+						<a class="btn-red ordos" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="span3 img-f2">
+					<div class="features-box"><i class="ico-feat2"></i>
+						<h3>MAECENAS</h3>
+						<p> Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. </p>
+						<div class="button-parent absolute">
+						<a class="btn-red ordos" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="span3 img-f3">
+					<div class="features-box"><i class="ico-feat3"></i>
+						<h3>ALIQUAM</h3>
+						<p> Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.  </p>
+						<div class="button-parent absolute">
+						<a class="btn-red ordos" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="span3 img-f4">
+					<div class="features-box"><i class="ico-feat4"></i>
+						<h3>HABITASSE</h3>
+						<p> Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.  </p>
+						<div class="button-parent absolute">
+						<a class="btn-red ordos" href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div> <!-- Конец блока особенности -->
+	<div class="gallery"><!-- Начало блока с большими картинками -->
+		<div class="container">
+			<div class="row rel">
+				<div class="piar-text span12">
+					<h1>Почему стоит работать со мной?</h1>
+					<p>Делаю все качественно, в установленный срок, после меня остается наслаждаться результатом!</p>
+					<img class="gen-slide" src="img/gen-slide.jpg" alt="">
+					<img class="left-slide" src="img/left-slide.jpg" alt="">
+					<img class="right-slide" src="img/right-slide.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div><!-- Конец блока с большими картинками -->
+	<div class="after-img"><!-- Блок комментария и грамм -->
+		<div class="container">
+			<div class="row">
+				<div class="span3">
+					<h4>Зачем со мной работать?</h4>
+					<ul>
+						<li><i></i>Quisque at massa ipsum</li>
+						<li><i></i>Maecenas a lorem augue, egestas</li>
+						<li><i></i>Cras vitae felis at lacus eleifend</li>
+						<li><i></i>Etiam auctor diam pellentesque</li>
+						<li><i></i>Nulla ac massa at dolor</li>
+						<li><i></i>Condimentum eleifend vitae vitae</li>
+					</ul>
+				</div>
+				<div class="span6">
+					<p class="above-grammas">
+						Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus <a href="">vehicula mattis</a>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.
+					</p>
+					<div class="grammas">
+						<img src="img/gramma1.png" alt="">
+						<img src="img/gramma2.png" alt="">
+						<img src="img/gramma3.png" alt="">
+						<img src="img/gramma4.png" alt="">
+					</div>
+				</div>
+				<div class="span3">
+					<h4>Что говорят клиенты?</h4>
+					<div class="comment">
+						<p>
+							Александр хороший специалист и знаток своего дела. Работа была выполнена качественно, в поставленный срок. Нареканий никаких нет, обращаться к нему буду еще, чего и вам советую!
+						</p>
+						
+					</div>
+					<span class="author"><i id="tail"></i>Камиль Абдрахманов</span>
+				</div>
+			</div>
+		</div>
+	</div><!-- Конец блока комментария и грамм -->
+	<div class="carusel"><!-- Начало карусели -->
+		
+		<div class="container">   	
+			<div class="row rel mar-bot-33">
+				<div class="span3">
+					<h4>Мои довольные клиенты</h4>
+				</div>
+				<div class="span8 rel"><img class="pin" src="img/pin.png" alt=""></div>
+				<div class="span1 rel">
+					<div id="carouselLeft" class="left-slide-btn" alt="Left Arrow"></div>
+					<div id="carouselRight" class="right-slide-btn" alt="Right Arrow"></div>
+				</div>
+			</div>
+			<div class="row height">
+				<div class="span12 rel">
+					<div id="container"> 
+						<img src="clickCarousel/img1.jpg" alt="Cuba" />
+						<img src="clickCarousel/img2.jpg" alt="Cuba" />
+						<img src="clickCarousel/img3.jpg" alt="Cuba" />
+						<img src="clickCarousel/img4.jpg" alt="Cuba" />
+						<img src="clickCarousel/img5.jpg" alt="Cuba" />
+						<img src="clickCarousel/img6.jpg" alt="Cuba" />
+						<img src="clickCarousel/img7.jpg" alt="Cuba" />
+						<img src="clickCarousel/img8.jpg" alt="Cuba" />
+					</div>
+				</div>
+			</div>
+			
+    	</div>
+	
+	</div><!-- Конец карусели -->
+	<div class="cont-box"><!-- Начало контактов -->
+		<div class="container">
+			<div class="row">
+				<div class="span4 cont-first">
+					<div class="logo logo-bot"><h1>Space </h1><h3>liquis </h3></div>
+					<p>
+						Дизайн и верстка: сайты-визитки, лэндинги, корпоративные сайты, блоги, интернет-магазины.<br>
+					</p>
+					<p>
+						Контент-менеджмент: наполнение и обслуживание сайтов, любая обработка изображений, файлов и т.д. на профессиональном уровне.
+					</p>
+					<ul>
+						<li><i>Skype:</i>spagon (Alex Space)</li>
+						<li><i>E-mail:</i>spwanderer@mail.ru</li>
+					</ul>
+				</div>
+				<div class="span2 lists">
+					<h4>Компания</h4>
+					<ul>
+						<li><i></i>О нас</li>
+						<li><i></i>FAQ</li>
+						<li><i></i>Контакты</li>
+						<li><i></i>Наши работы</li>
+						<li><i></i>Особое</li>
+						<li><i></i>Планы</li>
+					</ul>
+				</div>
+				<div class="span2 lists">
+					<h4>Клиентам</h4>
+					<ul>
+						<li><i></i>Блог</li>
+						<li><i></i>Форум</li>
+						<li><i></i>Поддержка</li>
+						<li><i></i>Новости</li>
+					</ul>
+				</div>
+				<div class="span4 blog-area">
+					<h4><span>последнее из</span> БЛОГА</h4>
+					<div class="blog-post">
+						<img src="img/blog1.jpg" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<span>26 May, 2013</span>
+					</div>
+					<div class="blog-post">
+						<img src="img/blog2.jpg" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						<span>26 May, 2013</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- Конец контактов -->
+
+	<div class="footer"><!-- Начало футера -->
+		<div class="container">
+			<div class="row">
+				<div class="span2">
+					<a class="space" href="http://liquis.zz.mu/"><span class="footer-rights">2014 Space liquis</span></a>
+				</div>
+				<div class="span2 offset8">
+					<div class="social">
+						<img src="img/rss.png" alt="">
+						
+						<img src="img/twitter.png" alt="">
+						<img src="img/google+.png" alt="">
+						<img src="img/facebook.png" alt="">
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		
+		
+	</div><!-- Конец футера -->
+</body>
+</html>

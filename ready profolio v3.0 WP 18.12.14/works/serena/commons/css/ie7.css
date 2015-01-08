@@ -1,0 +1,9 @@
+#pix_pag_ul > li{
+	*display:inline-block;
+	*display: inline;
+	zoom: 1;
+}
+#pix_pag_ul > li > span:hover {
+	background: url(../images/diapo/li-hover-active.png) no-repeat;
+	background-position: 0% -100%!important;
+}
