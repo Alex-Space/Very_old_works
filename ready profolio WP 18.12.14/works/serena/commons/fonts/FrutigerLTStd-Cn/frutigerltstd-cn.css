@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'FrutigerLTStd57Condensed';
-    src: url('frutigerltstd-cn.eot');
-    src: url('frutigerltstd-cn.eot') format('embedded-opentype'),
-         url('frutigerltstd-cn.woff') format('woff'),
-         url('frutigerltstd-cn.ttf') format('truetype'),
-         url('frutigerltstd-cn.svg#FrutigerLTStd57Condensed') format('svg');
-}

@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'ArlekinoRegular';
-    src: url('arlekino.eot');
-    src: url('arlekino.eot') format('embedded-opentype'),
-         url('arlekino.woff') format('woff'),
-         url('arlekino.ttf') format('truetype'),
-         url('arlekino.svg#ArlekinoRegular') format('svg');
-}

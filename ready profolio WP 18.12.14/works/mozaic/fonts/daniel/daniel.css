@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'DanielRegular';
-    src: url('daniel.eot');
-    src: url('daniel.eot') format('embedded-opentype'),
-         url('daniel.woff') format('woff'),
-         url('daniel.ttf') format('truetype'),
-         url('daniel.svg#DanielRegular') format('svg');
-}

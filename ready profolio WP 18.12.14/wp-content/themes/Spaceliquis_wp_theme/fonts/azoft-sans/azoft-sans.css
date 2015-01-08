@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'AzoftSansRegular';
-    src: url('azoft-sans.eot');
-    src: url('azoft-sans.eot') format('embedded-opentype'),
-         url('azoft-sans.woff') format('woff'),
-         url('azoft-sans.ttf') format('truetype'),
-         url('azoft-sans.svg#AzoftSansRegular') format('svg');
-}
