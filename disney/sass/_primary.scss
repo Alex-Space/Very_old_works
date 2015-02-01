@@ -1,0 +1,39 @@
+/* Primary styles starts */
+body {
+	font-family: $GS;
+}
+.pink-castle,
+.blue-castle {
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+.blue-castle {
+	background-image: url('../img/bg02.jpg');
+}
+a, a:hover, a:active {
+	text-decoration: none;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
+}
+/* Primary styles ends */

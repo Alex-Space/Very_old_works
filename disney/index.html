@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page01</title>
+    <link href="css/style.css" rel="stylesheet">
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="pink-castle">
+	<!-- Content starts -->
+		<div class="container">
+			<h1 class="main-question">Какая ты принцесса Disney?</h1>
+		</div>
+		<div class="container">
+			<div class="content-block">
+				<h2>You got 5 out of 28 correct!</h2>
+				<p>Oh, you poor unfortunate soul! It’s probably time to start rewatching some of these classic Disney films. You can also take a moment and find out which Disney Princess you are.</p>
+				<img class="princess-photo" src="img/page01-girl.jpg" alt="">
+				<a class="test-again" href="#">Пройти тест еще раз</a>
+				<div class="social-box">
+					<a href="#" class="facebook"><i class="facebook-icon"></i>Share on Facebook</a>
+					<a href="#" class="pinterest"><i class="pinterest-icon"></i>Share on Pinterest</a>
+					<a href="#" class="twitter"><i class="twitter-icon"></i>Share on Twitter</a>
+				</div>
+			</div>
+		</div>
+	<!-- Content ends -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+
+        var GOC = {
+      		opts: {
+        		disneyKey: true,
+        		search: true,
+        		css: {
+          			zIndex: 10000
+        		}
+      		},
+      		queue: [ ]
+    	};
+
+        (function (d) {
+
+          var s = d.createElement("script");
+
+          s.async = true;
+
+          s.src = "http://new.disney.ru/goc/us/new.disney.ru/responsive.js";
+
+          d.getElementsByTagName("head")[0].appendChild(s);
+
+        })(document);
+
+      </script>	
+  </body>
+</html>

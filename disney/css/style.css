@@ -1,0 +1,1228 @@
+/* line 5, c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, c:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'GillSansC';
+  src: url("../fonts/gillsans/GillSansC.eot?#iefix") format("embedded-opentype"), url("../fonts/gillsans/GillSansC.otf") format("opentype"), url("../fonts/gillsans/GillSansC.woff") format("woff"), url("../fonts/gillsans/GillSansC.ttf") format("truetype"), url("../fonts/gillsans/GillSansC.svg#GillSansC") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url("../MyriapPro/fonts/fonts/MyriadProRegular.eot");
+  src: url("../MyriapPro/fonts/MyriadProRegular.eot") format("embedded-opentype"), url("../MyriapPro/fonts/MyriadProRegular.woff2") format("woff2"), url("../MyriapPro/fonts/MyriadProRegular.woff") format("woff"), url("../MyriapPro/fonts/MyriadProRegular.ttf") format("truetype"), url("../MyriapPro/fonts/MyriadProRegular.svg#MyriadProRegular") format("svg");
+}
+/* Fonts ends */
+/* Primary styles starts */
+/* line 2, ../sass/_primary.scss */
+body {
+  font-family: "GillSansC";
+}
+
+/* line 5, ../sass/_primary.scss */
+.pink-castle,
+.blue-castle {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 13, ../sass/_primary.scss */
+.blue-castle {
+  background-image: url("../img/bg02.jpg");
+}
+
+/* line 16, ../sass/_primary.scss */
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+/* line 19, ../sass/_primary.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 28, ../sass/_primary.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 32, ../sass/_primary.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 36, ../sass/_primary.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* Primary styles ends */
+@media screen and (min-width: 1px) {
+  /* line 10, ../sass/style.scss */
+  body {
+    width: 320px;
+  }
+
+  /* line 13, ../sass/style.scss */
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Content area starts */
+  /* line 18, ../sass/style.scss */
+  .main-question {
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0;
+    color: #fff;
+  }
+
+  /* line 24, ../sass/style.scss */
+  .content-block {
+    background: #FBFAFA;
+    padding: 0 0 10px;
+    margin: 0 0 30px;
+    overflow: hidden;
+  }
+  /* line 29, ../sass/style.scss */
+  .content-block h2 {
+    color: #0085A1;
+    padding: 65px 10px 50px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+  }
+  /* line 36, ../sass/style.scss */
+  .content-block p {
+    color: #727272;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  /* line 42, ../sass/style.scss */
+  .content-block .princess-photo {
+    max-width: 100%;
+    display: block;
+    margin: 50px auto 0;
+    box-shadow: 0px 2px 15px #9D9D9D;
+    -webkit-box-shadow: 0px 2px 15px #9D9D9D;
+  }
+  /* line 49, ../sass/style.scss */
+  .content-block .test-again {
+    border: 1px solid #c4c7cd;
+    width: 100%;
+    display: block;
+    color: #666666;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    margin: 35px 0 55px;
+    box-shadow: 0px 1px 2px #DDD;
+    -webkit-box-shadow: 0px 1px 2px #DDD;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    background: #f5f4f4;
+    background: -moz-linear-gradient(top, #f5f4f4 0%, #f0efef 50%, #ececec 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #f5f4f4), color-stop(50%, #f0efef), color-stop(100%, #ececec));
+    background: -webkit-linear-gradient(top, #f5f4f4 0%, #f0efef 50%, #ececec 100%);
+    background: -o-linear-gradient(top, #f5f4f4 0%, #f0efef 50%, #ececec 100%);
+    background: -ms-linear-gradient(top, #f5f4f4 0%, #f0efef 50%, #ececec 100%);
+    background: linear-gradient(to bottom, #f5f4f4 0%, #f0efef 50%, #ececec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f4f4', endColorstr='#ececec', GradientType=0 );
+  }
+  /* line 76, ../sass/style.scss */
+  .content-block .test-again:hover {
+    color: #fff;
+    background: #0092ed;
+    border: 1px solid transparent;
+  }
+
+  /* line 85, ../sass/style.scss */
+  .social-box a,
+  .identify-box-social a {
+    color: #FFF;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  /* line 100, ../sass/style.scss */
+  .social-box a:hover,
+  .identify-box-social a:hover {
+    opacity: .8;
+  }
+  /* line 103, ../sass/style.scss */
+  .social-box a .facebook-icon,
+  .identify-box-social a .facebook-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url("../img/social.png");
+    margin: -6px 5px;
+  }
+  /* line 110, ../sass/style.scss */
+  .social-box a .pinterest-icon,
+  .identify-box-social a .pinterest-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url("../img/social.png");
+    margin: -6px 5px;
+    background-position: 0px -24px;
+  }
+  /* line 118, ../sass/style.scss */
+  .social-box a .twitter-icon,
+  .identify-box-social a .twitter-icon {
+    width: 24px;
+    height: 22px;
+    display: inline-block;
+    background-image: url("../img/social.png");
+    margin: -6px 5px;
+    background-position: 0px -48px;
+  }
+  /* line 127, ../sass/style.scss */
+  .social-box .facebook,
+  .identify-box-social .facebook {
+    background: #4C66A4;
+  }
+  /* line 130, ../sass/style.scss */
+  .social-box .pinterest,
+  .identify-box-social .pinterest {
+    background: #eb1e2c;
+  }
+  /* line 133, ../sass/style.scss */
+  .social-box .twitter,
+  .identify-box-social .twitter {
+    background: #55acee;
+  }
+
+  /* line 137, ../sass/style.scss */
+  .facebook-icon-big {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url("../img/social-big.png");
+    background-position: 0 0;
+  }
+
+  /* line 144, ../sass/style.scss */
+  .pinterest-icon-big {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url("../img/social-big.png");
+    background-position: 0 -30px;
+  }
+
+  /* line 151, ../sass/style.scss */
+  .twitter-icon-big {
+    width: 30px;
+    height: 26px;
+    display: inline-block;
+    background-image: url("../img/social-big.png");
+    background-position: 0 -60px;
+  }
+
+  /* line 159, ../sass/style.scss */
+  .identify-box-social .pinterest {
+    background: #CB2027;
+  }
+  /* line 162, ../sass/style.scss */
+  .identify-box-social a {
+    font-size: 20px;
+    padding: 0px 0 0 30px !important;
+    margin-right: 0;
+    line-height: 50px;
+  }
+  /* line 167, ../sass/style.scss */
+  .identify-box-social a i {
+    position: relative;
+    top: 7px;
+    left: -15px;
+  }
+
+  /* Content area ends */
+  /* Gallery area starts */
+  /* line 176, ../sass/style.scss */
+  .pink-number-btn {
+    background: url("../img/ellipse.png");
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0px auto;
+    padding: 30px 0px;
+    font-size: 48px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 190, ../sass/style.scss */
+  .gallery-box .gallery-item {
+    width: 50%;
+    float: left;
+    padding: 50px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 35px;
+    min-height: 205px;
+    font-size: 22px;
+    box-shadow: 0px 0px 10px #BABABA;
+    -webkit-box-shadow: 0px 0px 10px #BABABA;
+  }
+
+  /* line 205, ../sass/style.scss */
+  .progress-bar-box {
+    text-align: center;
+    font-size: 30px;
+    color: #0085a1;
+    margin: 10px 0;
+  }
+  /* line 210, ../sass/style.scss */
+  .progress-bar-box .progress-bar {
+    width: 100%;
+    margin: 25px 0;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* Gallery area ends */
+  /* Ariel starts */
+  /* line 221, ../sass/style.scss */
+  .ariel-page {
+    background-image: url("../img/ariel-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #69BFB4;
+  }
+
+  /* line 226, ../sass/style.scss */
+  .identify-box {
+    font-family: "MyriadProRegular";
+    padding: 0px 0px 75px;
+    min-height: 550px;
+    overflow: hidden;
+    -webkit-background-size: contain !important;
+    -o-background-size: contain !important;
+    background-size: contain !important;
+  }
+
+  /* line 235, ../sass/style.scss */
+  .identify-box-ariel {
+    background: #CDF8FF url("../img/ariel-identify--box-bg.jpg") no-repeat bottom;
+  }
+
+  /* line 238, ../sass/style.scss */
+  .ribbon-for-responsive,
+  .girl-for-responsive {
+    width: 100%;
+    max-width: 100%;
+    margin: 50px 0;
+  }
+
+  /* line 244, ../sass/style.scss */
+  .girl-for-responsive {
+    margin: 0;
+    display: block;
+  }
+
+  /* line 248, ../sass/style.scss */
+  .identify-title {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /* line 253, ../sass/style.scss */
+  .ariel-identify-title {
+    color: #ee152a;
+  }
+
+  /* line 257, ../sass/style.scss */
+  .identify-box-test p {
+    font-size: 24px;
+    text-align: justify;
+    padding: 0px 10px 20px;
+    line-height: 42px;
+  }
+
+  /* line 264, ../sass/style.scss */
+  .identify-box-social {
+    width: 100%;
+  }
+
+  /* Ariel ends */
+  /* Rapunzel starts */
+  /* line 270, ../sass/style.scss */
+  .rapunzel-page {
+    background-image: url("../img/rapunzel-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #93B85B;
+  }
+
+  /* line 275, ../sass/style.scss */
+  .rapunzel-identify-title {
+    color: #55913d;
+  }
+
+  /* line 278, ../sass/style.scss */
+  .identify-box-rapunzel {
+    background: #F6E6FF url("../img/rapunzel-identify--box-bg.jpg") no-repeat bottom;
+  }
+
+  /* Rapunzel ends */
+  /* Mulan starts */
+  /* line 283, ../sass/style.scss */
+  .mulan-page {
+    background-image: url("../img/mulan-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #51A777;
+  }
+
+  /* line 288, ../sass/style.scss */
+  .mulan-identify-title {
+    color: #ff142b;
+  }
+
+  /* line 291, ../sass/style.scss */
+  .identify-box-mulan {
+    background: #fef1c4 url("../img/mulan-identify--box-bg.jpg") no-repeat bottom;
+  }
+
+  /* Mulan ends */
+  /* Merida starts */
+  /* line 296, ../sass/style.scss */
+  .merida-page {
+    background-image: url("../img/merida-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #4E94C5;
+  }
+
+  /* line 301, ../sass/style.scss */
+  .merida-identify-title {
+    color: #9bd1e2;
+  }
+
+  /* line 304, ../sass/style.scss */
+  .identify-box-merida {
+    background: #0b3a40 url("../img/merida-identify--box-bg.jpg") no-repeat bottom;
+  }
+
+  /* line 308, ../sass/style.scss */
+  .identify-box-merida p {
+    color: #d2f1ff;
+  }
+
+  /* Merida ends */
+  /* Jasmine starts */
+  /* line 314, ../sass/style.scss */
+  .jasmine-page {
+    background-image: url("../img/jasmine-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #395386;
+  }
+
+  /* line 319, ../sass/style.scss */
+  .jasmine-identify-title {
+    color: #385e9f;
+  }
+
+  /* line 322, ../sass/style.scss */
+  .identify-box-jasmine {
+    background: #dbf9f1 url("../img/jasmine-identify--box-bg.jpg") no-repeat bottom;
+  }
+
+  /* Jasmine ends */
+  /* Aurora starts */
+  /* line 327, ../sass/style.scss */
+  .aurora-page {
+    background-image: url("../img/aurora-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #E85E75;
+  }
+
+  /* line 332, ../sass/style.scss */
+  .aurora-identify-title {
+    color: #385e9f;
+  }
+
+  /* line 335, ../sass/style.scss */
+  .identify-box-aurora {
+    background: #ffe5ec url("../img/aurora-identify--box-bg.jpg") no-repeat bottom;
+  }
+
+  /* Aurora ends */
+  /* Tiana starts */
+  /* line 340, ../sass/style.scss */
+  .tiana-page {
+    background-image: url("../img/tiana-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #56a953;
+  }
+
+  /* line 345, ../sass/style.scss */
+  .tiana-identify-title {
+    color: #297937;
+  }
+
+  /* line 348, ../sass/style.scss */
+  .identify-box-tiana {
+    background: #EAFFD8 url("../img/tiana-identify--box-bg.jpg") no-repeat bottom;
+  }
+  /* line 350, ../sass/style.scss */
+  .identify-box-tiana .identify-box-social {
+    float: left;
+  }
+  /* line 353, ../sass/style.scss */
+  .identify-box-tiana .identify-box-test {
+    float: right;
+  }
+
+  /* Tiana ends */
+  /* Pocahontas starts */
+  /* line 359, ../sass/style.scss */
+  .pocahontas-page {
+    background-image: url("../img/pocahontas-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #eba2c1;
+  }
+
+  /* line 364, ../sass/style.scss */
+  .pocahontas-identify-title {
+    color: #385e9f;
+  }
+
+  /* line 367, ../sass/style.scss */
+  .identify-box-pocahontas {
+    background: #fbe7c2 url("../img/pocahontas-identify--box-bg.jpg") no-repeat bottom;
+  }
+  /* line 369, ../sass/style.scss */
+  .identify-box-pocahontas .identify-box-social {
+    float: left;
+  }
+  /* line 372, ../sass/style.scss */
+  .identify-box-pocahontas .identify-box-test {
+    float: right;
+  }
+
+  /* Pocahontas ends */
+  /* Cinderella starts */
+  /* line 378, ../sass/style.scss */
+  .cinderella-page {
+    background-image: url("../img/cinderella-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #eda5c2;
+  }
+
+  /* line 383, ../sass/style.scss */
+  .cinderella-identify-title {
+    color: #385e9f;
+  }
+
+  /* line 386, ../sass/style.scss */
+  .identify-box-cinderella {
+    background: #e8f5fe url("../img/cinderella-identify--box-bg.jpg") no-repeat bottom;
+  }
+  /* line 388, ../sass/style.scss */
+  .identify-box-cinderella .identify-box-social {
+    float: left;
+  }
+  /* line 391, ../sass/style.scss */
+  .identify-box-cinderella .identify-box-test {
+    float: right;
+  }
+
+  /* Cinderella ends */
+  /* Snow-white starts */
+  /* line 397, ../sass/style.scss */
+  .snow-white-page {
+    background-image: url("../img/snow-white-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #6fb78b;
+  }
+
+  /* line 402, ../sass/style.scss */
+  .snow-white-identify-title {
+    color: #329231;
+  }
+
+  /* line 405, ../sass/style.scss */
+  .identify-box-snow-white {
+    background: #f7e5bf url("../img/snow-white-identify--box-bg.jpg") no-repeat bottom;
+  }
+  /* line 407, ../sass/style.scss */
+  .identify-box-snow-white .identify-box-social {
+    float: left;
+  }
+  /* line 410, ../sass/style.scss */
+  .identify-box-snow-white .identify-box-test {
+    float: right;
+  }
+
+  /* Snow-white ends */
+  /* Belle starts */
+  /* line 416, ../sass/style.scss */
+  .belle-page {
+    background-image: url("../img/belle-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #5889bf;
+  }
+
+  /* line 421, ../sass/style.scss */
+  .belle-identify-title {
+    color: #0085a1;
+  }
+
+  /* line 424, ../sass/style.scss */
+  .identify-box-belle {
+    background: #ffedc9 url("../img/belle-identify--box-bg.jpg") no-repeat bottom;
+  }
+  /* line 426, ../sass/style.scss */
+  .identify-box-belle .identify-box-social {
+    float: left;
+  }
+  /* line 429, ../sass/style.scss */
+  .identify-box-belle .identify-box-test {
+    float: right;
+  }
+
+  /* Belle ends */
+}
+/* (min-width: 1px) */
+@media screen and (min-width: 320px) {
+  /* line 437, ../sass/style.scss */
+  body {
+    width: 100%;
+  }
+}
+/* min-width: 330px */
+@media screen and (min-width: 600px) {
+  /* Content area starts */
+  /* line 445, ../sass/style.scss */
+  .main-question {
+    font-size: 45px;
+  }
+
+  /* line 449, ../sass/style.scss */
+  .content-block h2 {
+    font-size: 40px;
+  }
+  /* line 452, ../sass/style.scss */
+  .content-block p {
+    font-size: 25px;
+    padding: 0px;
+    line-height: 45px;
+  }
+
+  /* line 458, ../sass/style.scss */
+  .social-box,
+  .identify-box-social {
+    text-align: center;
+  }
+  /* line 461, ../sass/style.scss */
+  .social-box a,
+  .identify-box-social a {
+    display: inline-block;
+    width: 185px;
+  }
+
+  /* line 467, ../sass/style.scss */
+  .identify-box-social a {
+    width: 270px;
+  }
+
+  /* Content area ends */
+  /* Gallery area starts */
+  /* line 474, ../sass/style.scss */
+  .gallery-box .gallery-item {
+    font-size: 30px;
+  }
+
+  /* Gallery area ends */
+  /* Girls starts */
+  /* line 480, ../sass/style.scss */
+  .ribbon-for-responsive {
+    width: initial;
+    margin: 0px auto;
+    display: block;
+    padding: 50px 0;
+  }
+
+  /* line 486, ../sass/style.scss */
+  .girl-for-responsive {
+    margin: 0 auto;
+    width: initial;
+  }
+
+  /* Girls ends */
+}
+/* min-width: 600px */
+@media screen and (min-width: 1100px) {
+  /* line 494, ../sass/style.scss */
+  .container {
+    width: 1100px;
+  }
+
+  /* line 497, ../sass/style.scss */
+  .hidden-logo {
+    display: none;
+  }
+
+  /* Content area starts */
+  /* line 501, ../sass/style.scss */
+  .main-question {
+    font-size: 60px;
+    margin: 100px 0px;
+  }
+
+  /* line 505, ../sass/style.scss */
+  .main-question-more-top-position {
+    margin: 70px 0px 180px;
+  }
+
+  /* line 508, ../sass/style.scss */
+  .content-block {
+    padding: 0px 125px 50px;
+    margin: 0px auto 130px;
+    width: 1100px;
+    overflow: visible;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px #A7A7A7;
+    -webkit-box-shadow: 0px 0px 15px #A7A7A7;
+  }
+  /* line 518, ../sass/style.scss */
+  .content-block h2 {
+    font-size: 48px;
+  }
+  /* line 521, ../sass/style.scss */
+  .content-block p {
+    font-size: 30px;
+  }
+  /* line 524, ../sass/style.scss */
+  .content-block img {
+    width: initial;
+    margin: 0 auto;
+    display: block;
+  }
+  /* line 529, ../sass/style.scss */
+  .content-block .test-again {
+    padding: 17px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+  }
+  /* line 534, ../sass/style.scss */
+  .content-block .princess-photo-upper {
+    position: relative;
+    top: -130px;
+    margin: 0 auto;
+  }
+  /* line 539, ../sass/style.scss */
+  .content-block .favorite-activity-title {
+    padding: 0 50px 10px;
+  }
+
+  /* line 543, ../sass/style.scss */
+  .social-box,
+  .identify-box-social {
+    text-align: center;
+  }
+  /* line 546, ../sass/style.scss */
+  .social-box a,
+  .identify-box-social a {
+    display: inline-block;
+    width: 250px;
+    padding: 12px;
+    margin-right: 15px;
+  }
+  /* line 551, ../sass/style.scss */
+  .social-box a:last-child,
+  .identify-box-social a:last-child {
+    margin-right: 0;
+  }
+
+  /* line 557, ../sass/style.scss */
+  .identify-box-social a {
+    margin-right: 0;
+  }
+
+  /* Content area ends */
+  /* Gallery area starts */
+  /* line 564, ../sass/style.scss */
+  .content-block .favorite-activity-title {
+    overflow: hidden;
+    line-height: 105px;
+  }
+  /* line 567, ../sass/style.scss */
+  .content-block .favorite-activity-title .pink-number-btn {
+    float: left;
+    line-height: 40px;
+  }
+
+  /* line 573, ../sass/style.scss */
+  .gallery-box {
+    overflow: hidden;
+    text-align: center;
+  }
+  /* line 576, ../sass/style.scss */
+  .gallery-box .gallery-item {
+    width: 215px;
+    height: 200px;
+    min-height: initial;
+    float: none;
+    padding: 70px 28px;
+    font-size: 24px;
+    line-height: 30px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  /* line 589, ../sass/style.scss */
+  .progress-bar-box {
+    text-align: center;
+    font-size: 30px;
+    color: #0085a1;
+    margin: 10px 0;
+  }
+  /* line 594, ../sass/style.scss */
+  .progress-bar-box .progress-bar {
+    width: 100%;
+    margin: 25px 0;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* Gallery area ends */
+  /* Girls starts */
+  /* line 606, ../sass/style.scss */
+  .identify-box-test p {
+    padding: 0px 50px 20px;
+  }
+
+  /* Girls ends */
+}
+/* min-width: 1100px */
+@media screen and (min-width: 1200px) {
+  /* line 614, ../sass/style.scss */
+  body {
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+
+  /* line 619, ../sass/style.scss */
+  .content-gallery {
+    margin: -90px 0 0;
+  }
+
+  /* Ariel starts */
+  /* line 623, ../sass/style.scss */
+  .ribbon-for-responsive,
+  .girl-for-responsive {
+    display: none;
+  }
+
+  /* line 627, ../sass/style.scss */
+  .identify-box {
+    min-height: 570px;
+    padding: 75px 80px 75px 90px;
+    margin: 470px auto 80px;
+    overflow: hidden;
+    width: 1100px;
+    box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 639, ../sass/style.scss */
+  .identify-box-test {
+    float: left;
+    width: 550px;
+  }
+  /* line 642, ../sass/style.scss */
+  .identify-box-test p {
+    padding: 0;
+  }
+
+  /* line 646, ../sass/style.scss */
+  .identify-title {
+    font-size: 59px;
+    text-align: left;
+    padding: 0;
+    margin: 0 0 70px;
+  }
+
+  /* line 652, ../sass/style.scss */
+  .ariel-page {
+    background-image: url("../img/ariel-bg-with-girl.jpg");
+  }
+
+  /* line 657, ../sass/style.scss */
+  .identify-box-test p {
+    text-align: left;
+  }
+
+  /* line 661, ../sass/style.scss */
+  .identify-box-social {
+    width: 310px;
+    float: right;
+  }
+
+  /* Ariel ends */
+  /* Rapunzel starts */
+  /* line 667, ../sass/style.scss */
+  .rapunzel-page {
+    background-image: url("../img/rapunzel-bg-with-girl.jpg");
+  }
+
+  /* Rapunzel ends */
+  /* Mulan starts */
+  /* line 672, ../sass/style.scss */
+  .mulan-page {
+    background-image: url("../img/mulan-bg-with-girl.jpg");
+  }
+
+  /* Mulan ends */
+  /* Merida starts */
+  /* line 677, ../sass/style.scss */
+  .merida-page {
+    background-image: url("../img/merida-bg-with-girl.jpg");
+  }
+
+  /* Merida ends */
+  /* Jasmine starts */
+  /* line 682, ../sass/style.scss */
+  .jasmine-page {
+    background-image: url("../img/jasmine-bg-with-girl.jpg");
+  }
+
+  /* Jasmine ends */
+  /* Aurora starts */
+  /* line 687, ../sass/style.scss */
+  .aurora-page {
+    background-image: url("../img/aurora-bg-with-girl.jpg");
+  }
+
+  /* Aurora ends */
+  /* Tiana starts */
+  /* line 692, ../sass/style.scss */
+  .tiana-page {
+    background-image: url("../img/tiana-bg-with-girl.jpg");
+  }
+
+  /* Tiana ends */
+  /* Pocahontas starts */
+  /* line 697, ../sass/style.scss */
+  .pocahontas-page {
+    background-image: url("../img/pocahontas-bg-with-girl.jpg");
+  }
+
+  /* Pocahontas ends */
+  /* Cinderella starts */
+  /* line 702, ../sass/style.scss */
+  .cinderella-page {
+    background-image: url("../img/cinderella-bg-with-girl.jpg");
+  }
+
+  /* Cinderella ends */
+  /* Snow-white starts */
+  /* line 707, ../sass/style.scss */
+  .snow-white-page {
+    background-image: url("../img/snow-white-bg-with-girl.jpg");
+  }
+
+  /* Snow-white ends */
+  /* Belle starts */
+  /* line 712, ../sass/style.scss */
+  .belle-page {
+    background-image: url("../img/belle-bg-with-girl.jpg");
+  }
+
+  /* Belle ends */
+}
+/* min-width: 1200px */
+@media screen and (min-width: 1500px) {
+  /* Girls area starts */
+  /* line 720, ../sass/style.scss */
+  body {
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* line 725, ../sass/style.scss */
+  .identify-box {
+    min-height: 570px;
+    padding: 75px 80px 75px 90px;
+    margin: 636px auto 80px;
+    overflow: hidden;
+    width: 1100px;
+    box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* Girls area ends */
+}
+/* min-width: 1500px */
+@media screen and (min-width: 1600px) {
+  /* line 741, ../sass/style.scss */
+  .container {
+    margin: 0 auto;
+    width: 1600px;
+  }
+
+  /* Gallery area starts */
+  /* line 746, ../sass/style.scss */
+  .content-block-for-gallery {
+    padding: 0px 75px 40px;
+  }
+
+  /* line 750, ../sass/style.scss */
+  .gallery-box .gallery-item {
+    width: 210px;
+  }
+
+  /* line 754, ../sass/style.scss */
+  .progress-bar-box {
+    margin: 40px 0;
+    width: 100%;
+  }
+  /* line 757, ../sass/style.scss */
+  .progress-bar-box .progress-bar {
+    max-width: 100%;
+    width: initial;
+    float: left;
+    margin: 8px 7px;
+  }
+
+  /* Gallery area ends */
+  /* Ariel starts */
+  /* line 766, ../sass/style.scss */
+  .ariel-page {
+    background-image: url("../img/ariel-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* line 774, ../sass/style.scss */
+  .identify-box-social a {
+    width: 310px;
+    height: 50px;
+    text-align: left;
+  }
+
+  /* Ariel ends */
+  /* Rapunzel starts */
+  /* line 782, ../sass/style.scss */
+  .rapunzel-page {
+    background-image: url("../img/rapunzel-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Rapunzel ends */
+  /* Mulan starts */
+  /* line 791, ../sass/style.scss */
+  .mulan-page {
+    background-image: url("../img/mulan-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Mulan ends */
+  /* Merida starts */
+  /* line 800, ../sass/style.scss */
+  .merida-page {
+    background-image: url("../img/merida-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Merida ends */
+  /* Jasmine starts */
+  /* line 809, ../sass/style.scss */
+  .jasmine-page {
+    background-image: url("../img/jasmine-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Jasmine ends */
+  /* Aurora starts */
+  /* line 818, ../sass/style.scss */
+  .aurora-page {
+    background-image: url("../img/aurora-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Aurora ends */
+  /* Tiana starts */
+  /* line 827, ../sass/style.scss */
+  .tiana-page {
+    background-image: url("../img/tiana-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Tiana ends */
+  /* Pocahontas starts */
+  /* line 836, ../sass/style.scss */
+  .pocahontas-page {
+    background-image: url("../img/pocahontas-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Pocahontas ends */
+  /* Cinderella starts */
+  /* line 845, ../sass/style.scss */
+  .cinderella-page {
+    background-image: url("../img/cinderella-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Cinderella ends */
+  /* Snow-white starts */
+  /* line 854, ../sass/style.scss */
+  .snow-white-page {
+    background-image: url("../img/snow-white-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Snow-white ends */
+  /* Belle starts */
+  /* line 863, ../sass/style.scss */
+  .belle-page {
+    background-image: url("../img/belle-bg-with-girl.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Belle ends */
+}
+/* min-width: 1600px */
